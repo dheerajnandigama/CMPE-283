@@ -12,6 +12,8 @@
  * See SDM volume 4, section 2.1
  */
 #define IA32_VMX_PINBASED_CTLS 0x481
+
+// Added other MSRs
 #define IA32_VMX_ENTRY_CTLS 0x484
 #define IA32_VMX_EXIT_CTLS 0x483
 #define IA32_VMX_PROCBASED_CTLS 0x482
@@ -44,8 +46,7 @@ struct capability_info pinbased[5] =
 };
 
 /*
- * Primary Procbased control capabilities
- * See SDM volume 3C, section 24.6.2
+ * Primary Procbased control capabilities from SDM V3C:S24.6.2
  */
 struct capability_info procbased[21] =
 {
@@ -73,8 +74,7 @@ struct capability_info procbased[21] =
 }; 
 
 /*
- * Secondary Secondary Procbased control capabilities
- * See SDM volume 3, section 24.6.2
+ * Secondary Secondary Procbased control capabilities from SDMV3:S24.6.2
  */
 struct capability_info secondary_procbased[23] =
 {
@@ -104,8 +104,7 @@ struct capability_info secondary_procbased[23] =
 }; 
 
 /*
- * Primary Entry control capabilities
- * See SDM volume 3C, section 24.7.1
+ * Primary Entry control capabilities from SDM V3C:S24.7.1
  */
 struct capability_info entry_controls[9] =
 {
@@ -121,8 +120,7 @@ struct capability_info entry_controls[9] =
 };
 
 /*
- * Primary Exit control capabilities
- * See SDM volume 3C, section 24.8.1
+ * Primary Exit control capabilities FROM SDM V3C:S24.8.1
  */
 struct capability_info exit_controls[11] =
 {
@@ -242,4 +240,6 @@ cleanup_module(void)
 	printk(KERN_INFO "CMPE 283 Assignment 1 Module Exits\n");
 }
 
+
+// Added Module License to compile using make
 MODULE_LICENSE("GPL");
