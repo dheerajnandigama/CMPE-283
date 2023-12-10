@@ -1,0 +1,3 @@
+arch/x86/kvm/kvm.o
+arch/x86/kvm/kvm-intel.o
+arch/x86/kvm/kvm-amd.o

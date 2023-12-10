@@ -1,0 +1,1 @@
+savedcmd_arch/x86/kvm/kvm-amd.mod := printf '%s\n'   svm/svm.o svm/vmenter.o svm/pmu.o svm/nested.o svm/avic.o svm/sev.o svm/hyperv.o svm/svm_onhyperv.o | awk '!x[$$0]++ { print("arch/x86/kvm/"$$0) }' > arch/x86/kvm/kvm-amd.mod
