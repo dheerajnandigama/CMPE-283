@@ -6650,7 +6650,7 @@ static int vmx_handle_exit(struct kvm_vcpu *vcpu, fastpath_t exit_fastpath)
 	// record the ending of cpu's time stamp counter
 	end_time_stamp_counter = rdtsc();
 	// compute the current time stamp gap and add it to the total cpu cycle time
-	arch_atomic64_add((end_time_stamp_counter - begin_time_stamp_counter), &total_cup_cycles_counter);
+	arch_atomic64_add((end_time_stamp_counter - begin_time_stamp_counter), &total_cpu_cycles_counter);
 
 	/*
 	 * Exit to user space when bus lock detected to inform that there is
