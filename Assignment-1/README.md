@@ -1,5 +1,7 @@
 ## CMPE-283 Assignment - 1
 
+### Github Link : [Assignment-1](https://github.com/dheerajnandigama/CMPE-283/tree/main/Assignment-1)
+
 ### Overview
 
 In this assignment we will create a linux kernal module to query diffrent MSR's to figure out diffrent virtualization features available to the CPU.
@@ -7,6 +9,9 @@ In this assignment we will create a linux kernal module to query diffrent MSR's 
 For this assignment we have enabled a GCP VM based on linux operating system. We verify the MSR's by inserting a new module to the kernal and discover its features by the features it discovers.
 
 ### Contribution 
+
+Vachavaya Asish Raju - 016943433
+Dheeraj Nandigama - 017402203
 
 #### Asish's Contribution
  
