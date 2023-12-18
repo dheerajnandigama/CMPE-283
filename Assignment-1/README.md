@@ -8,11 +8,13 @@ In this assignment we will create a linux kernal module to query diffrent MSR's 
 
 For this assignment we have enabled a GCP VM based on linux operating system. We verify the MSR's by inserting a new module to the kernal and discover its features by the features it discovers.
 
-### Contribution 
+### Team Members
 
 Vachavaya Asish Raju - 016943433
 
 Dheeraj Nandigama - 017402203
+
+### Contribution 
 
 #### Asish's Contribution
  
